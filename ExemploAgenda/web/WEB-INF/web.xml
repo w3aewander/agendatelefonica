@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+        
+    <servlet>
+        <servlet-name>ListarContatoServlet</servlet-name>
+        <servlet-class>br.senac.agenda.controller.ListarContatoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdicionarContatoServlet</servlet-name>
+        <servlet-class>br.senac.agenda.controller.AdicionarContatoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ModificarContatoServlet</servlet-name>
+        <servlet-class>br.senac.agenda.controller.ModificarContatoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ExcluirContatoServlet</servlet-name>
+        <servlet-class>br.senac.agenda.controller.ExcluirContatoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListarContatoServlet</servlet-name>
+        <url-pattern>/ListarContatoServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdicionarContatoServlet</servlet-name>
+        <url-pattern>/AdicionarContatoServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ModificarContatoServlet</servlet-name>
+        <url-pattern>/ModificarContatoServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ExcluirContatoServlet</servlet-name>
+        <url-pattern>/ExcluirContatoServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
